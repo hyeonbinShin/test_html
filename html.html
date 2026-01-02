@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>DEVELOPER</h1>
+    <p>Creative · Logical · Passionate</p>
+    <button id="themeBtn">🌙 Dark Mode</button>
+</header>
+
+<nav>
+    <button class="active" onclick="showSection('about', this)">About</button>
+    <button onclick="showSection('skills', this)">Skills</button>
+    <button onclick="showSection('projects', this)">Projects</button>
+    <button onclick="showSection('contact', this)">Contact</button>
+</nav>
+
+<section id="about" class="active fade">
+    <h2>About Me</h2>
+    <p>
+        저는 UI/UX와 로직 구현을 함께 고민하는 개발자입니다.<br>
+        단순한 화면이 아닌, <b>“사용자가 편한 서비스”</b>를 만드는 것이 목표입니다.
+    </p>
+</section>
+
+<section id="skills" class="fade">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Java</div>
+        <div class="skill">C#</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">MSSQL</div>
+    </div>
+</section>
+
+<section id="projects" class="fade">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>🎬 영화 예매 시스템</h3>
+            <p>C# WinForms 기반 좌석 선택, 할인 조건, 가격 계산 구현</p>
+        </div>
+        <div class="card">
+            <h3>🍽 맛집 지도 서비스</h3>
+            <p>Java + MySQL로 위치 기반 맛집 검색 및 UI 구성</p>
+        </div>
+        <div class="card">
+            <h3>🧠 스마트 UI 프로젝트</h3>
+            <p>애니메이션, 카드 UI, 사용자 경험 중심 설계</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="fade">
+    <h2>Contact</h2>
+    <div class="contact">
+        <p>📧 example@email.com</p>
+        <p>💻 github.com/example</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Developer Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
