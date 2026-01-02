@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Developer Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>DEVELOPER</h1>
-    <p>Creative · Logical · Passionate</p>
-    <button id="themeBtn">🌙 Dark Mode</button>
-</header>
-
-<nav>
-    <button class="active" onclick="showSection('about', this)">About</button>
-    <button onclick="showSection('skills', this)">Skills</button>
-    <button onclick="showSection('projects', this)">Projects</button>
-    <button onclick="showSection('contact', this)">Contact</button>
-</nav>
-
-<section id="about" class="active fade">
-    <h2>About Me</h2>
-    <p>
-        저는 UI/UX와 로직 구현을 함께 고민하는 개발자입니다.<br>
-        단순한 화면이 아닌, <b>“사용자가 편한 서비스”</b>를 만드는 것이 목표입니다.
-    </p>
-</section>
-
-<section id="skills" class="fade">
-    <h2>Skills</h2>
-    <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Java</div>
-        <div class="skill">C#</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">MSSQL</div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-</section>
 
-<section id="projects" class="fade">
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="card">
-            <h3>🎬 영화 예매 시스템</h3>
-            <p>C# WinForms 기반 좌석 선택, 할인 조건, 가격 계산 구현</p>
+    <div class="container">
+        <header>
+            <h1>🚀 Welcome to the Future</h1>
+            <p class="subtitle">멋진 경험을 만들어가는 공간</p>
+        </header>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>크리에이티브</h3>
+                <p>혁신적인 아이디어와 창의적인 솔루션으로 당신의 비전을 현실로 만듭니다.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>빠른 성능</h3>
+                <p>최적화된 코드와 최신 기술로 초고속 퍼포먼스를 제공합니다.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>아름다운 디자인</h3>
+                <p>사용자 경험을 최우선으로 하는 감각적이고 모던한 디자인을 추구합니다.</p>
+            </div>
         </div>
-        <div class="card">
-            <h3>🍽 맛집 지도 서비스</h3>
-            <p>Java + MySQL로 위치 기반 맛집 검색 및 UI 구성</p>
+
+        <div class="interactive-area">
+            <a href="#" class="cta-button">시작하기</a>
         </div>
-        <div class="card">
-            <h3>🧠 스마트 UI 프로젝트</h3>
-            <p>애니메이션, 카드 UI, 사용자 경험 중심 설계</p>
-        </div>
+
+        <footer>
+            <p>© 2026 Modern Portfolio. Made with ❤️</p>
+        </footer>
     </div>
-</section>
 
-<section id="contact" class="fade">
-    <h2>Contact</h2>
-    <div class="contact">
-        <p>📧 example@email.com</p>
-        <p>💻 github.com/example</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Developer Portfolio
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
